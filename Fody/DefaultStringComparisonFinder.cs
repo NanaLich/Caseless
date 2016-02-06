@@ -21,7 +21,7 @@ public class DefaultStringComparisonFinder
                 name = "Ordinal";               // everything else will use StringComparison.Ordinal
                 break;
             case "ORDINAL":
-                UseOperatorForOrdinal = false;  // leave force a.Equals(b) alone, it becomes a.Equals(b, StringComparison.Ordinal)
+                UseOperatorForOrdinal = false;  // leave a.Equals(b) alone, it later becomes a.Equals(b, StringComparison.Ordinal)
                 break;
         }
 
